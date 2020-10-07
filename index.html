@@ -6,17 +6,10 @@
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
    
     <a-marker preset='hiro'>
-        <a-scene>
-            <a-scene>
-                <a-assets>
-                  <a-asset-item id="tree" src="/BrainStem/BrainStem.gltf"></a-asset-item>
-                </a-assets>
-              
-                <a-entity gltf-model="#tree"></a-entity>
-              </a-scene>
+        <a-dodecahedron position='0 1 0' material='color: orange;opacity: 1'></a-dodecahedron>
     </a-marker>
     <a-marker preset='custom' url='pattern-Pic.patt'>
-        <a-entity gltf-model="url(/Duck/Duck.gltf)"></a-entity>
+        <a-octahedron position='0 1 0' material='color: purple;opacity: 0.9'></a-octahedron>
     </a-marker>
     <a-marker preset='custom' url='pattern.patt'>
         <a-torus position='0 1 0' material='color: red;opacity: 1'></a-torus>
