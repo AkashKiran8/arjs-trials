@@ -1,0 +1,21 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+<script src="aframe-ar.js"> </script>
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+   
+    <a-marker preset='hiro'>
+        <a-dodecahedron position='0 1 0' material='color: orange;opacity: 1'></a-dodecahedron>
+    </a-marker>
+    <a-marker preset='custom' url='pattern-Pic.patt'>
+        <a-octahedron position='0 1 0' material='color: purple;opacity: 0.9'></a-octahedron>
+    </a-marker>
+    <a-marker preset='custom' url='pattern.patt'>
+        <a-tetrahedron position='0 1 0' material='color: red;opacity: 1'></a-tetrahedron>
+    </a-marker>
+    
+    <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
