@@ -6,13 +6,13 @@
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
    
     <a-marker preset='hiro'>
-        <a-dodecahedron position='0 1 0' material='color: orange;opacity: 1'></a-dodecahedron>
+        <a-image src="Pic.jpg"></a-image>
     </a-marker>
     <a-marker preset='custom' url='pattern-Pic.patt'>
-        <a-octahedron position='0 1 0' material='color: purple;opacity: 0.9'></a-octahedron>
+        <a-entity gltf-model="url(sunflower/sunflower.gltf)"></a-entity>
     </a-marker>
     <a-marker preset='custom' url='pattern.patt'>
-        <a-torus position='0 1 0' material='color: red;opacity: 1'></a-torus>
+        <a-entity gltf-model="url(stereo/stereo.gltf)"></a-entity>
     </a-marker>
     
     <a-entity camera></a-entity>
